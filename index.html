@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>servlet3-maven-archetype by maciejwalkowiak</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/maciejwalkowiak/servlet3-maven-archetype">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/maciejwalkowiak/servlet3-maven-archetype/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/maciejwalkowiak/servlet3-maven-archetype/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>servlet3-maven-archetype</h1>
+          <p>maven, servlet3, maven archetype, java</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/maciejwalkowiak">maciejwalkowiak</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>Summary</h3>
+
+<p>The project is a Maven archetype for basic Servlet 3 based Java web application. </p>
+
+<ul>
+<li>no dependencies to any web frameworks - just plain Java Servlet</li>
+<li>no XML</li>
+<li>Tomcat 7 plugin included - gets your application running in seconds</li>
+</ul><h3>Installation</h3>
+
+<p>Clone this repository</p>
+
+<pre><code>$ git clone https://github.com/maciejwalkowiak/servlet3-maven-archetype.git
+</code></pre>
+
+<p>Install it to local Maven repository</p>
+
+<pre><code>$ cd servlet3-maven-archetype
+$ mvn install
+</code></pre>
+
+<h3>Create project based on this archetype</h3>
+
+<pre><code>$ mvn archetype:generate \
+    -DarchetypeGroupId=pl.maciejwalkowiak \
+    -DarchetypeArtifactId=servlet3-webapp-archetype \
+    -DarchetypeVersion=1.0
+</code></pre>
+
+<p>Run project:</p>
+
+<pre><code>$ mvn tomcat7:run
+</code></pre>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
