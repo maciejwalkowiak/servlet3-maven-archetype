@@ -7,3 +7,6 @@ Read more on github.io page:
 
 ========================
 Check out also my development blog: <http://maciejwalkowiak.pl/blog>
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maciejwalkowiak/servlet3-maven-archetype/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
