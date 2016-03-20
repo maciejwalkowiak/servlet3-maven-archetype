@@ -15,8 +15,8 @@ import java.security.Security;
 import java.security.Signature;
 
 public class LicenseSigner {
-
     public static String sign(String respXml) {
+        Security.addProvider(new BouncyCastleProvider());
         String returnXml = "";
         try {
             String privKeyPEM = "-----BEGIN RSA PRIVATE KEY-----\n" +
@@ -25,9 +25,7 @@ public class LicenseSigner {
                     "NNj0BDlf38hOtkhDzz/hkYb+EBYLLvldhgsD0OvRNy8yhz7EjaUqLCB0juIN4QIB\n" +
                     "AAIBAAIBAAIBAAIBAA==\n" +
                     "-----END RSA PRIVATE KEY-----";
-            System.out.println(privKeyPEM);
-            Security.addProvider(new BouncyCastleProvider());
-
+                    
             PEMParser pemParser = new PEMParser(new StringReader(privKeyPEM));
             PEMKeyPair pemKeyPair = (PEMKeyPair) pemParser.readObject();
             JcaPEMKeyConverter jcaPEMKeyConverter = new JcaPEMKeyConverter();
