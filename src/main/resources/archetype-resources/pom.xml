@@ -21,9 +21,9 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-		
-		<!-- bouncycastle -->
-		<dependency>
+        
+        <!-- bouncycastle -->
+        <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>1.54</version>
